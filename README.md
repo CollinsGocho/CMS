@@ -1,4 +1,4 @@
-# 🎓 Classroom Management System (CMS)
+#  Classroom Management System (CMS)
 
 A production-grade **Classroom Management System** built with **Python 3** and **SQL (SQLite)** to track, manage, and analyze **student attendance** and **academic performance** (assessments, grades, weighted scoring, GPA, and transcripts).
 
@@ -6,15 +6,15 @@ Includes both a **modern graphical user interface (Tkinter GUI)** with real-time
 
 ---
 
-## 🌟 Key Features
+##  Key Features
 
-### 1. 👥 Student & Curriculum Management
+### 1.  Student & Curriculum Management
 - Full CRUD operations for student profiles: Student ID, Full Name, Email, Gender, Date of Birth, Phone, Enrollment Date, and Status (`Active`, `Inactive`, `Graduated`, `Suspended`).
 - Course catalog with Course Code, Course Title, Instructor, Credit Hours, and Semester.
 - Student enrollment and course roster management.
 - Real-time search and filter across name, ID, or email.
 
-### 2. 📅 Attendance Tracker
+### 2. Attendance Tracker
 - Track attendance by course session: `Present`, `Absent`, `Late`, `Excused`, with optional notes/remarks.
 - Bulk roll call marking: Quickly mark an entire class session, or use the **"Mark All Present"** shortcut.
 - Visual status indicators and double-click inline toggle on the attendance sheet.
@@ -22,13 +22,13 @@ Includes both a **modern graphical user interface (Tkinter GUI)** with real-time
   $$\text{Attendance Rate} = \frac{\text{Present} + (0.75 \times \text{Late})}{\text{Total Sessions}} \times 100\%$$
 - **Automatic Attendance Alerts**: Flags students whose attendance drops below **75%**.
 
-### 3. 📝 Academic Evaluations & Gradebook
+### 3.  Academic Evaluations & Gradebook
 - Flexible assessment types: `Quiz`, `Assignment`, `Midterm`, `Final Exam`, `Project`, and `Lab`.
 - Configurable maximum marks and grade weight percentages (e.g. 20% homework, 30% midterm, 50% final).
 - Interactive gradebook to enter scores and qualitative instructor feedback.
 - Real-time class analytics: Class Average, Highest Mark, Lowest Mark, and Submission completion rate.
 
-### 4. 📊 GPA & Letter Grade Engine
+### 4.  GPA & Letter Grade Engine
 - Standard 4.0 GPA scale conversion:
   | Percentage | Letter Grade | Grade Points | Performance |
   | :--- | :---: | :---: | :--- |
@@ -44,13 +44,13 @@ Includes both a **modern graphical user interface (Tkinter GUI)** with real-time
 - Cumulative GPA calculation weighted by Course Credit Hours:
   $$\text{Cumulative GPA} = \frac{\sum (\text{Course Grade Point} \times \text{Credit Hours})}{\sum \text{Total Credit Hours}}$$
 
-### 5. 📜 Official Transcripts & Report Cards
+### 5.  Official Transcripts & Report Cards
 - Comprehensive, formatted student transcripts showing course credits, attendance rate, total score %, letter grade, credit points, GPA, academic standing, and itemized feedback.
 - One-click export to plain-text `.txt` and spreadsheet `.csv` formats.
 
 ---
 
-## 🗄️ SQL Database Architecture
+##  SQL Database Architecture
 
 The relational schema is defined in [schema.sql](file:///c:/Users/USER/Desktop/CMS/schema.sql) with strict constraints (`FOREIGN KEY ... ON DELETE CASCADE`, `UNIQUE`, `CHECK`), indexes, and SQL views.
 
@@ -129,7 +129,7 @@ erDiagram
 
 ---
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 CMS/
@@ -150,7 +150,7 @@ CMS/
 
 ---
 
-## 🚀 Quick Start Guide
+##  Quick Start Guide
 
 ### Prerequisites
 - Python 3.8+ (Tested on Python 3.14)
@@ -189,7 +189,7 @@ python main.py --seed
 
 ---
 
-## 📄 Sample Report Card Output
+##  Sample Report Card Output
 
 ```
 ==============================================================================
